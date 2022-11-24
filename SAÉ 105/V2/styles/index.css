@@ -3,7 +3,7 @@ body {
     font-family: 'Courier New', Arial, 'FragmentMono-Regular';
     margin: 0;
     padding: 0;
-    background: url(/img/bg-dark.jpg);
+    background: url(../img/bg-dark.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
