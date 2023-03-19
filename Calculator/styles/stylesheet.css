@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Segment7";
-    src: url(/fonts/Segment7Standard.otf);
+    font-family: "LCD7";
+    src: url(/fonts/AdvancedPixelLcd7-yGOq.otf);
 }
 
 * {
@@ -17,11 +17,25 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 button {
     border-radius: 5px;
+    border: none;
+    background-color: #dddddd;
+    box-shadow: #575757 1px 5px 1px 0px;
+    transition: ease 0.1s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+button:active {
+    box-shadow: inset #aeaeae 0px 5px 10px 0px;
+    transform: translateY(3px);
 }
 
 .calculatrice {
@@ -52,8 +66,9 @@ button {
     margin-bottom: 45px;
     padding-top: 8px;
     padding-right: 10px;
-    font-family: "Segment7";
-    font-size: 60px;
+    font-family: "LCD7";
+    font-size: 30px;
+    overflow: auto;
 }
 
 .touches {
@@ -64,6 +79,31 @@ button {
     justify-content: center;
 }
 
+.bouton {
+    font-size: larger;
+}
+
+.reset {
+    background-color: #71df71;
+}
+
+.reset:hover {
+    background-color: #99f299;
+}
+
+.reset:active {
+    box-shadow: inset #5aa95a 0px 5px 10px 0px;
+}
+
 .egal {
-    width: 130px;
+    width: 135px;
+    background-color: #89CFEF;
+}
+
+.egal:hover {
+    background-color: #a7e3ff;
+}
+
+.egal:active {
+    box-shadow: inset #7ca9be 0px 5px 10px 0px;
 }
