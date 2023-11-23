@@ -1,5 +1,0 @@
-#7D7F80 - DarkGrey 1
-#9615DB - Purple
-#D2D3D3 - LightGrey
-#555759 - DarkGrey 2
-#1b1c1d - LightBlack
