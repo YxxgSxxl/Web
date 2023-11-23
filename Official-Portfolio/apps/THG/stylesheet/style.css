@@ -1,0 +1,271 @@
+/* Text select */
+::-moz-selection {
+    color: rgb(255, 255, 255);
+    background: #6E5649;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: #6E5649;
+}
+
+/* Init */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: #6E5649;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 0.6em 0.8em 0.6em 0.8em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+.header-logo img {
+    width: 5em;
+}
+
+.header-burgericon {
+    cursor: pointer;
+}
+
+.header-menu {
+    background-color: #6E5649;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-block: 6rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 99vw;
+    transform: translateX(-100%);
+    transition: ease 0.6s;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-menu li {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.header-menu li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(161, 107, 78);
+    text-decoration-thickness: 0.1em;
+}
+
+.header-menuexit {
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+/* Make elements visible */
+.header-open {
+    transform: translateX(0);
+}
+
+/* Make elements invisible */
+.no-visibility {
+    display: none;
+}
+
+section.index {
+    background-color: #EEE5D6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+section.index button {
+    background-color: rgb(223, 136, 74);
+    border: solid rgb(161, 107, 78);
+    border-radius: 15%;
+    padding: 1em;
+    font-size: larger;
+    transition: ease-in 0.2s;
+    width: fit-content;
+}
+
+section.index button:hover {
+    background-color: rgb(161, 107, 78);
+    border-radius: 30%;
+    padding: 1em;
+}
+
+section.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EEE5D6;
+    height: 100vh;
+    padding-top: 2em;
+}
+
+section.app h1 {
+    font-weight: 600;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+div.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ad8973;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    color: #EEE5D6;
+    gap: 1em;
+}
+
+.quiz {
+    padding: 1em 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #EEE5D6;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #5d5d5d;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ad8973;
+    color: rgb(255, 255, 255);
+}
+
+#next-btn {
+    background-color: #EEE5D6;
+    color: black;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* For Mobile */
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 0.6em 2em 0.6em 2em;
+    }
+
+    header ul {
+        align-items: center;
+        text-align: center;
+    }
+
+    header button.header-burgericon {
+        display: none;
+    }
+
+    .header-menu {
+        width: auto;
+        height: auto;
+        position: relative;
+        min-width: auto;
+
+        transform: translateX(0);
+        padding-block: 0;
+
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .header-menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1em;
+        gap: 3rem;
+    }
+
+    .header-menu li {
+        margin-bottom: 0;
+    }
+
+    .header-menu button.header-menuexit {
+        display: none;
+    }
+}
