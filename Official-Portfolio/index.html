@@ -32,7 +32,7 @@
     <meta name="msapplication-TileColor" content="#22003f">
     <meta name="msapplication-config" content="https://alexeckes.com/favicon/browserconfig.xml">
     <meta name="theme-color" content="#000000">
-        
+
     <!-- Canonical Links -->
     <link rel="Canonical" href="https://alexeckes.com" />
 
@@ -82,21 +82,35 @@
     <!-- WELCOME CONTENT -->
     <section class="home-container"> <!-- Welcome Content -->
         <div class="home-welcome">
-            <div class="welcome-wrapper">
-                <h1>Enchanté, moi c'est Alex.</h1>
-                <a href="https://alexeckes.com/index.html#about">(Mais qui est Alex ?)</a>
+
+            <div class="flex-wrapper">
+                <div class="home-one">
+                    <div class="welcome-wrapper">
+                        <h1>Enchanté, moi c'est Alex.</h1>
+                        <a href="https://alexeckes.com/index.html#about">(Mais c'est qui Alex ?)</a>
+                    </div>
+                    <p>
+                        Un développeur amateur et passionné. Actuellement en BUT MMI à l'Université de Haute Alsace de Mulhouse.
+                    </p>
+                </div>
+    
+                <div class="home-two">
+                    <div class="welcome-picture">
+                        <img src="https://avatars.githubusercontent.com/u/114391274?v=4" alt="">
+                    </div>
+                    <h2 style="margin-top: 20px;">Dev en cours...</h2>
+                </div>
             </div>
-            <p>
-                Un développeur amateur et passionné. Actuellement en BUT MMI à l'Université de Haute Alsace de Mulhouse
-            </p>
+
+            
         </div>
     </section>
 
     <!-- ABOUT CONTENT -->
     <section class="home-container home-about" id="about">
         <h2>À propos</h2>
-        <p>Qui je suis ? Un humain comme vous et moi vous savez. Je suis passionné d'informatique <span
-                class="emoji">👨‍💻</span> et de musique <span class="emoji">🎶</span>.</p>
+        <p>Qui je suis ? Un humain comme vous et moi. Je suis passionné d'informatique <span class="emoji">👨‍💻</span>
+            et de musique <span class="emoji">🎶</span>.</p>
     </section>
 
     <!-- PROJECTS CONTENT -->
@@ -139,25 +153,25 @@
             <div class="project-container">
                 <button type="button" class="projects">
                     <a href="apps/BotDiscord/botdiscord.html" class="open-project">
-                    <h3>Bot Discord</h3>
-                    <p>
-                        Bot discord conçu avec l'environnement NodeJS ainsi que la librairie Discord.JS (V14).
-                    </p>
-                    <div class="project-icons">
-                        <div class="nodejs-icon" title="NodeJS">
-                            <embed src="img/icons/nodejs.svg" alt="NodeJS SVG" height="50px">
+                        <h3>Bot Discord</h3>
+                        <p>
+                            Bot discord conçu avec l'environnement NodeJS ainsi que la librairie Discord.JS (V14).
+                        </p>
+                        <div class="project-icons">
+                            <div class="nodejs-icon" title="NodeJS">
+                                <embed src="img/icons/nodejs.svg" alt="NodeJS SVG" height="50px">
+                            </div>
+                            <div class="discordjs-icon" title="Discord.JS">
+                                <embed src="img/icons/discordjs.svg" alt="DISCORD.JS SVG" height="50px">
+                            </div>
                         </div>
-                        <div class="discordjs-icon" title="Discord.JS">
-                            <embed src="img/icons/discordjs.svg" alt="DISCORD.JS SVG" height="50px">
-                        </div>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                        stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <g fill="none" fill-rule="evenodd">
-                            <path
-                                d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8" />
-                        </g>
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <g fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8" />
+                            </g>
+                        </svg>
                     </a>
                 </button>
             </div>
@@ -204,9 +218,34 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <section class="home-footer footer">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-utils">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img loading="lazy" src="/img/logos/alex-eckes-header-logoV2-w.png" alt="Logo Alex Eckes" />
+                        </a>
+                    </div>
+                    <ul class="footer-list">
+                        <li><a href="">Mentions Légales</a></li>
+                        <li><a href="">Politique de Confidentialité</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
 
-    </footer>
+                    <div class="footer-links">
+                        <a title="Github" target="_blank" href="https://github.com/YxxgSxxl">
+                            <svg width="20%" height="20%" viewBox="0 0 24 24" stroke="#ffffff" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3"></path></svg>
+                        </a>
+                        <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/alex-eckes/">
+                            <svg width="20%" height="20%" viewBox="0 0 24 24" stroke="#ffffff" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011"></path></svg>
+                        </a>
+                        <a title="other" href="" class="footer-logo"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 
     <script src="js/index.js"></script>
 </body>

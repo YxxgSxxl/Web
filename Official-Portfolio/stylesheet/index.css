@@ -1,7 +1,6 @@
-
-:root-color{
-    --primary-selection:"#ffffff";
-    --secondary-selection:"#3c4c54";
+:root-color {
+    --primary-selection: "#ffffff";
+    --secondary-selection: "#3c4c54";
 }
 
 /* Text select */
@@ -41,7 +40,7 @@ header {
 }
 
 ul {
-    list-style-type: armenian;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -69,14 +68,14 @@ h1 {
     margin-top: 0px;
     text-align: start;
     text-shadow:
-    0 0 2px #72a7c2,
-    0 0 5px #72a7c2,
-    0 0 10px #72a7c2,
-    0 0 20px #3d6579,
-    0 0 40px #3d6579,
-    0 0 60px #3d6579,
-    0 0 80px #3d6579,
-    0 0 100px #3d6579;
+        0 0 2px #72a7c2,
+        0 0 5px #72a7c2,
+        0 0 10px #72a7c2,
+        0 0 20px #3d6579,
+        0 0 40px #3d6579,
+        0 0 60px #3d6579,
+        0 0 80px #3d6579,
+        0 0 100px #3d6579;
 }
 
 h2 {
@@ -103,14 +102,14 @@ h3 {
 
 span.emoji {
     text-shadow:
-    0 0 2px #325466,
-    0 0 5px #325466,
-    0 0 10px #325466,
-    0 0 20px #325466,
-    0 0 40px #325466,
-    0 0 60px #325466,
-    0 0 80px #325466,
-    0 0 100px #325466;
+        0 0 2px #325466,
+        0 0 5px #325466,
+        0 0 10px #325466,
+        0 0 20px #325466,
+        0 0 40px #325466,
+        0 0 60px #325466,
+        0 0 80px #325466,
+        0 0 100px #325466;
 }
 
 /* Header */
@@ -196,6 +195,23 @@ span.emoji {
     display: none;
 }
 
+.welcome-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-picture img {
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 /* About Content */
 
 /* Projects Content */
@@ -215,6 +231,7 @@ span.emoji {
     display: flex;
     justify-content: center;
     padding: 2%;
+    margin-bottom: 8rem;
 }
 
 .moreprojects-grid {
@@ -299,12 +316,12 @@ button.projects p {
     width: fit-content;
     padding: 2%;
     box-shadow:
-    0 0 4px #fff,
-    inset 0 0 4px #fff,
-    0 0 4px #c6e2ff,
-    inset 0 0 4px #c6e2ff,
-    0 0 8px #c6e2ff,
-    inset 0 0 8px #c6e2ff;
+        0 0 4px #fff,
+        inset 0 0 4px #fff,
+        0 0 4px #c6e2ff,
+        inset 0 0 4px #c6e2ff,
+        0 0 8px #c6e2ff,
+        inset 0 0 8px #c6e2ff;
     margin-bottom: 20px;
 }
 
@@ -326,6 +343,78 @@ button.projects p {
 .home-container.home-about {
     text-align: center;
 }
+
+/* Footer Content */
+footer {
+    min-height: 10vh;
+    background-color: #324046;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-container img {
+    width: 50px;
+}
+
+.footer-utils {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links {
+    width: 40%;
+}
+
+.footer-list ul {
+    text-decoration: none;
+}
+
+.footer-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* .home-footer {
+    height: 10vh;
+    background-color: #324046;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.footer-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list ul {
+    text-decoration: none;
+}
+
+.footer-list li a {
+    color: white;
+    text-decoration: none;
+} */
+
 
 /* FOR TABLET */
 @media screen and (max-width: 950px) {
@@ -352,10 +441,18 @@ button.projects p {
     header ul {
         align-items: center;
         text-align: center;
+        margin: 0;
     }
 
     header button.header-burgericon {
         display: none;
+    }
+
+    .emoji {
+        width: fit-content;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
     }
 
     .header-menu {
@@ -394,11 +491,18 @@ button.projects p {
     /* Welcome Content */
     .home-welcome {
         font-size: 1.2rem;
+        padding: 0 5rem;
     }
-    
 
     .home-welcome p {
         width: 60%;
+    }
+
+    .flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
     }
 
     .welcome-wrapper {
@@ -418,9 +522,28 @@ button.projects p {
         transition: ease 0.4s;
         width: fit-content;
     }
-    
+
     .welcome-wrapper a:hover {
         color: #addef6;
+    }
+
+    .welcome-picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .welcome-picture img {
+        border-radius: 50%;
+        width: 15rem;
+    }
+
+    .home-one {
+        width: 70%;
+    }
+
+    .home-two {
+        width: 30%;
+        padding-top: 2rem;
     }
 
     /* About Content */
@@ -498,4 +621,69 @@ button.projects p {
     .open-project svg {
         cursor: pointer;
     }
+
+    /* Footer Content */
+    footer {
+        padding: 0 2rem;
+    }
+
+    .home-footer {
+        height: 20vh;
+        background-color: #324046;
+    }
+
+    .home-footer.footer {
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-utils {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-utils ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+    }
+
+    /* .footer-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-utils {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo a img {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        padding: 1px;
+    } */
 }

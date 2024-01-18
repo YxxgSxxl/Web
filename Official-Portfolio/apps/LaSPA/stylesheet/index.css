@@ -1,0 +1,100 @@
+/*////////////////////////
+//      Mobile First    //
+////////////////////////*/
+
+/* ==[ INIT ]== */
+:root {
+    --primary-bgcolor : #f1f9fb;
+    --banner-color : #B5BAE0;
+
+    --button-a : #7DBBC3;
+    --button-b : #DAEDBD;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bgcolor);
+    font-family: "Khyay", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/* ==[ HEADER ]== */
+header {
+    background-color: var(--primary-bgcolorcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    all: unset; /* Permet de retirer toutes propriétées css à une balise */
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+header a.header-logo {
+    cursor: pointer;
+}
+
+header a.header-logo img {
+    height: 3rem;
+}
+
+header button {
+    all: unset;
+    cursor: pointer;
+}
+
+.header-menu {
+    background-color: var(--primary-bgcolor);
+    text-align: center;
+    align-items: center;
+    padding-block: 6rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 99vw;
+    transform: translateX(-100%);
+    transition: ease 0.6s;
+}
+
+.header-menu li {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header-menuexit {
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+/* Makes elements visible */
+.header-open {
+    transform: translateX(0);
+}
+
+/* Makes elements unvisible */
+.no-visibility {
+    display: none;
+}
