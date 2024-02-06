@@ -10,15 +10,11 @@ require "gabarit.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La SPA - Nos Actions</title>
+    <title>La SPA - Adopter</title>
 </head>
 
 <body>
-
-
-    <?php
-    include "gabarit_footer.php";
-    ?>
+    
 </body>
 
 </html>

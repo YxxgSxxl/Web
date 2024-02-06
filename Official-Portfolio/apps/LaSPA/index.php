@@ -4,6 +4,9 @@ require "controller/controller.php";
 
 if (isset($_GET["action"])) {
     try {
+        if ($_GET["action"] == "accueil") {
+            accueil();
+        }
         if ($_GET["action"] == "apropos") {
             apropos();
         }
@@ -15,6 +18,16 @@ if (isset($_GET["action"])) {
         }
         if ($_GET["action"] == "contact") {
             contact();
+        }
+        if ($_GET["action"] == "conditions") {
+            conditions();
+        }
+        if ($_GET["action"] == "login") {
+            login();
+        }
+        // Debug Inscription
+        if ($_GET["action"] == "register") {
+            debugInscription();
         }
     } catch (Exception $e) {
         erreur($e->getMessage());

@@ -1,4 +1,5 @@
 <?php
+require "./model/model.php";
 
 function accueil() {
     require "vue/vueAccueil.php";
@@ -18,6 +19,19 @@ function nosactions() {
 
 function contact() {
     require "vue/vueContact.php";
+}
+
+function conditions() {
+    require "vue/vueConditions.php";
+}
+
+function login() {
+    require "vue/vueLogin.php";
+}
+
+// Debug Inscription
+function debugInscription() {
+    require "vue/vueRegister.php";
 }
 
 function erreur($message) {
