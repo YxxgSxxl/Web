@@ -7,10 +7,3 @@
 body {
     color: #F1F1F1;
 }
-
-#canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #1F1F1F;
-}

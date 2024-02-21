@@ -3,8 +3,10 @@ const ctx = canvas.getContext('2d');
 
 const particules = new Particules();
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.style.backgroundColor="black";
+
+canvas.width = 200;
+canvas.height = 200;
 
 
 
